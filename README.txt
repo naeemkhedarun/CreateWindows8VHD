@@ -6,11 +6,19 @@ Parameters:
 
 Example:
 
+
+C:\projects\CreateWindows8VHD> 
+C:\projects\CreateWindows8VHD> 
+
+
 # Move into the directory where the scripts list.
 cd C:\projects\CreateWindows8VHD
 
+#Import the function
+Import-Module .\Create-Windows8VHD.ps1
+
 # Create the VHD noting the paramters
-Create-Windows8VHD "C:\vhd\windows8.vhd" "30000" "X"
+Create-Windows8VHD "C:\vhd\windows8preview.vhd" "30000" "X"
 
 # Following this to set up a dual boot record you can do (where driveletter is what you choose above):
 
