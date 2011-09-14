@@ -43,5 +43,3 @@ exit" | out-file -encoding ASCII $diskpart;
 	
 	.\Install-WindowsImage.ps1 -WIM ($iso.Name+":\sources\install.wim") -Apply -Index 1 -Destination ($driveLetter+":")
 }
-
-Create-Windows8VHD "C:\vhd2\asf\my.vhd" "30000" "X"
